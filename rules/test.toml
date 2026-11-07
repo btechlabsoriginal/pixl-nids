@@ -1,0 +1,6 @@
+[[rules]]
+name = "DNS test"
+protocol = "udp"
+port = 53
+threshold = 1
+window_secs = 10

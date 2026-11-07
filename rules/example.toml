@@ -1,0 +1,20 @@
+[[rules]]
+name = "SSH packet burst"
+protocol = "tcp"
+port = 22
+threshold = 100
+window_secs = 30
+
+[[rules]]
+name = "DNS packet burst"
+protocol = "udp"
+port = 53
+threshold = 250
+window_secs = 15
+
+[[rules]]
+name = "SMB traffic spike"
+protocol = "tcp"
+port = 445
+threshold = 80
+window_secs = 60
