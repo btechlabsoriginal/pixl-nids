@@ -23,6 +23,10 @@ sudo cargo run --release -- --iface en0 --rules rules/example.toml
 
 Find your interface with `ifconfig` on macOS or `ip link` on Linux. Press Ctrl+C to stop. If sudo cannot find Cargo, run the already-built executable with `sudo ./target/release/watchline --iface en0 --rules rules/example.toml`.
 
+## Screenshots
+
+<img width="1440" height="900" alt="Screenshot 2026-11-10 at 19 31 16" src="https://github.com/user-attachments/assets/bbfb03ce-be37-4e65-a818-dc7c603af79c" />
+
 ## Rules and alerts
 
 Edit `rules/example.toml` to change names, protocols, ports, thresholds, or window lengths. Protocols are TCP or UDP. Packets count when either endpoint uses the specified port. An alert fires when the counter reaches its threshold. Repeated alerts for that rule are suppressed for one full window.
